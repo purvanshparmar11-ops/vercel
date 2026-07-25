@@ -5,7 +5,71 @@
 <!-- Mirrored from bulidx-html.vercel.app/contact.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 14 Jul 2026 13:24:37 GMT -->
 <!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
 <head>
-        <!-- ========== Meta Tags ========== -->
+
+
+    <style>
+body{
+font-family: Arial, sans-serif;
+}
+form{
+max-width: 500px;
+margin: 50px auto;
+}
+input,
+textarea{
+width: 100%;
+padding: 10px;
+margin-bottom: 15px;
+box-sizing: border-box;
+}
+button{
+background: #28a745;
+color: #fff;
+border: none;
+padding: 12px 25px;
+cursor: pointer;
+border-radius: 5px;
+}
+button:hover{
+opacity: 0.9;
+}
+/* Popup */
+.popup{
+display:none;
+position:fixed;
+left:0;
+top:0;
+width:100%;
+height:100%;
+background:rgba(0,0,0,0.5);
+z-index:9999;
+}
+.popup-content{
+position:absolute;
+top:50%;
+left:50%;
+transform:translate(-50%,-50%);
+background:#fff;
+padding:30px;
+border-radius:10px;
+text-align:center;
+min-width:320px;
+box-shadow:0 0 15px rgba(0,0,0,0.3);
+}
+.popup-content h3{
+color:#28a745;
+margin-bottom:10px;
+}
+.popup-content p{
+margin-bottom:20px;
+}
+.popup-content button{
+background:#28a745;
+}
+</style>
+
+    
+    <!-- ========== Meta Tags ========== -->
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -34,441 +98,40 @@
     </head>
     <body>
 
-         <!-- Preloader Start -->
-        <div id="preloader" class="preloader">
-            <div class="animation-preloader">
-                <div class="spinner">                
-                </div>
-                <div class="txt-loading">
-                     <span data-text-preloader="B" class="letters-loading">
-                        B
-                    </span>
-                     <span data-text-preloader="U" class="letters-loading">
-                        U
-                    </span>
-                    <span data-text-preloader="L" class="letters-loading">
-                        L
-                    </span>
-                     <span data-text-preloader="I" class="letters-loading">
-                        I
-                    </span>
-                     <span data-text-preloader="D" class="letters-loading">
-                        D
-                    </span>
-                    <span data-text-preloader="X" class="letters-loading">
-                        X
-                    </span>
-                </div>
-                <p class="text-center">Loading</p>
-            </div>
-            <div class="loader">
-                <div class="row">
-                    <div class="col-3 loader-section section-left">
-                        <div class="bg"></div>
-                    </div>
-                    <div class="col-3 loader-section section-left">
-                        <div class="bg"></div>
-                    </div>
-                    <div class="col-3 loader-section section-right">
-                        <div class="bg"></div>
-                    </div>
-                    <div class="col-3 loader-section section-right">
-                        <div class="bg"></div>
-                    </div>
-                </div>
-            </div>
-        </div>
 
-         <!-- Back To Top Start -->
-        <button id="back-top" class="back-to-top">
-            <i class="fa-regular fa-arrow-up"></i>
-        </button>
 
-        <!--<< Mouse Cursor Start >>-->  
-        <div class="mouse-cursor cursor-outer"></div>
-        <div class="mouse-cursor cursor-inner"></div>
 
-       <!-- Offcanvas Area Start -->
-       <div class="fix-area">
-        <div class="offcanvas__info">
-            <div class="offcanvas__wrapper">
-                <div class="offcanvas__content">
-                    <div class="offcanvas__top mb-5 d-flex justify-content-between align-items-center">
-                        <div class="offcanvas__logo">
-                            <a href="index.html">
-                               <img src="assets/img/logo/black-logo-2.svg" alt="logo-img">
-                            </a>
-                        </div>
-                        <div class="offcanvas__close">
-                            <button>
-                            <i class="fas fa-times"></i>
-                            </button>
-                        </div>
-                    </div>
-                    <p class="text d-none d-xl-block">
-                        Nullam dignissim, ante scelerisque the  is euismod fermentum odio sem semper the is erat, a feugiat leo urna eget eros. Duis Aenean a imperdiet risus.
-                    </p>
-                    <div class="mobile-menu fix mb-3"></div>
-                    <div class="offcanvas__contact">
-                        <h1 class="text">Contact Info</h1>
-                        <ul>
-                            <li class="d-flex align-items-center">
-                                <div class="offcanvas__contact-icon">
-                                    <i class="fal fa-map-marker-alt"></i>
-                                </div>
-                                <div class="offcanvas__contact-text">
-                                    <a target="_blank" href="#">Main Street, Melbourne, Australia</a>
-                                </div>
-                            </li>
-                            <li class="d-flex align-items-center">
-                                <div class="offcanvas__contact-icon mr-15">
-                                    <i class="fal fa-envelope"></i>
-                                </div>
-                                <div class="offcanvas__contact-text">
-                                    <a href="mailto:info@example.com"><span class="mailto:info@example.com">info@example.com</span></a>
-                                </div>
-                            </li>
-                            <li class="d-flex align-items-center">
-                                <div class="offcanvas__contact-icon mr-15">
-                                    <i class="fal fa-clock"></i>
-                                </div>
-                                <div class="offcanvas__contact-text">
-                                    <a target="_blank" href="#">Mod-friday, 09am -05pm</a>
-                                </div>
-                            </li>
-                            <li class="d-flex align-items-center">
-                                <div class="offcanvas__contact-icon mr-15">
-                                    <i class="far fa-phone"></i>
-                                </div>
-                                <div class="offcanvas__contact-text">
-                                    <a href="tel:+11002345909">+11002345909</a>
-                                </div>
-                            </li>
-                        </ul>
-                        <div class="header-button mt-4">
-                            <a href="contact.html" class="theme-btn text-center">
-                                <span>Get A Quote<i class="fa-solid fa-arrow-right-long"></i></span>
-                            </a>
-                        </div>
-                        <div class="social-icon d-flex align-items-center">
-                            <a href="#"><i class="fab fa-facebook-f"></i></a>
-                            <a href="#"><i class="fab fa-twitter"></i></a>
-                            <a href="#"><i class="fab fa-youtube"></i></a>
-                            <a href="#"><i class="fab fa-linkedin-in"></i></a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-       </div>
-       <div class="offcanvas__overlay"></div>
 
-        <!-- Header Section Start -->
-        <header id="header-sticky" class="header-2">
-            <div class="container-fluid">
-                <div class="mega-menu-wrapper">
-                    <div class="header-main">
-                        <div class="header-left">
-                            <div class="logo">
-                                <a href="index.html" class="header-logo">
-                                    <img src="assets/img/logo/black-logo-2.svg" alt="logo-img">
-                                </a>
-                            </div>
-                        </div>
-                        <div class="mean__menu-wrapper">
-                            <div class="main-menu">
-                                <nav id="mobile-menu">
-                                    <ul>
-                                        <li class="has-dropdown active menu-thumb">
-                                            <a href="index.html">
-                                            Home 
-                                            <i class="fas fa-angle-down"></i>
-                                            </a>
-                                            <ul class="submenu has-homemenu">
-                                                <li>
-                                                    <div class="homemenu-items">
-                                                        <div class="homemenu">
-                                                            <div class="homemenu-thumb">
-                                                                <img src="assets/img/header/home-1.jpg" alt="img">
-                                                                <div class="demo-button">
-                                                                    <a href="index.html" class="theme-btn">
-                                                                        <span>DEMO PAGE</span>
-                                                                    </a>
-                                                                </div>
-                                                            </div>
-                                                            <div class="homemenu-content text-center">
-                                                                <h2 class="homemenu-title">
-                                                                    Construction
-                                                                </h2>
-                                                            </div>
-                                                        </div>
-                                                        <div class="homemenu">
-                                                            <div class="homemenu-thumb mb-15">
-                                                                <img src="assets/img/header/home-2.jpg" alt="img">
-                                                                <div class="demo-button">
-                                                                    <a href="index-2.html" class="theme-btn">
-                                                                       <span>DEMO PAGE</span>
-                                                                    </a>
-                                                                </div>
-                                                            </div>
-                                                            <div class="homemenu-content text-center">
-                                                                <h2 class="homemenu-title">
-                                                                    Engeneering
-                                                                </h2>
-                                                            </div>
-                                                        </div>
-                                                        <div class="homemenu">
-                                                            <div class="homemenu-thumb mb-15">
-                                                                <img src="assets/img/header/home-3.jpg" alt="img">
-                                                                <div class="demo-button">
-                                                                    <a href="index-3.html" class="theme-btn">
-                                                                        <span>DEMO PAGE</span>
-                                                                    </a>
-                                                                </div>
-                                                            </div>
-                                                            <div class="homemenu-content text-center">
-                                                                <h2 class="homemenu-title">
-                                                                    Modern
-                                                                </h2>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </li>
-                                            </ul>
-                                        </li>
-                                        <li class="has-dropdown active d-xl-none">
-                                            <a href="index.html" class="border-none">
-                                            HOME
-                                            </a>
-                                            <ul class="submenu">
-                                                <li><a href="index.html">HOME 01</a></li>
-                                                <li><a href="index-2.html">HOME 02</a></li>
-                                                <li><a href="index-3.html">HOME 03</a></li>
-                                            </ul>
-                                        </li>
-                                        <li class="has-dropdown">
-                                            <a href="news.html">
-                                                PAGES
-                                                <i class="fas fa-angle-down"></i>
-                                            </a>
-                                            <ul class="submenu">
-                                                <li>
-                                                    <a href="about.html">ABOUT US</a>
-                                                </li>
-                                                <li class="has-dropdown">
-                                                    <a href="project-details.html">
-                                                    PROJECT
-                                                    <i class="fas fa-angle-down"></i>
-                                                    </a>
-                                                    <ul class="submenu">
-                                                        <li><a href="project.html">PROJECT</a></li>
-                                                        <li><a href="project-details.html">PROJECT DETAILS</a></li>
-                                                    </ul>
-                                                </li>
-                                                <li class="has-dropdown">
-                                                    <a href="team-details.html">
-                                                    TEAM
-                                                    <i class="fas fa-angle-down"></i>
-                                                    </a>
-                                                    <ul class="submenu">
-                                                        <li><a href="team.html">TEAM</a></li>
-                                                        <li><a href="team-details.html">TEAM DETAILS</a></li>
-                                                    </ul>
-                                                </li>
-                                                <li><a href="pricing.html">PRICING</a></li>
-                                                <li><a href="faq.html">FAQS</a></li>
-                                                <li><a href="gallery.html">GALLERY</a></li>
-                                                <li><a href="404.html">404</a></li>
-                                            </ul>
-                                        </li>
-                                        <li>
-                                            <a href="service-details.html">
-                                             SERVICES 
-                                            <i class="fas fa-angle-down"></i>
-                                            </a>
-                                            <ul class="submenu">
-                                                <li><a href="service.html">SERVICES</a></li>
-                                                <li><a href="service-details.html">SERVICES Details</a></li>
-                                            </ul>
-                                        </li>
-                                        <li>
-                                            <a href="news-details.html">
-                                                BLOG
-                                                <i class="fas fa-angle-down"></i>
-                                            </a>
-                                            <ul class="submenu">
-                                                <li><a href="news.html">BLOG</a></li>
-                                                <li><a href="news-standard.html">BLOG GRID</a></li>
-                                                <li><a href="news-details.html">BlOG DETAILS</a></li>
-                                            </ul>
-                                        </li>
-                                        <li>
-                                            <a href="contact.html">CONTACT US</a>
-                                        </li>
-                                    </ul>
-                                </nav>
-                            </div>
-                        </div>
-                        <div class="header-right d-flex justify-content-end align-items-center">
-                            <div class="header-button">
-                                <a href="contact.html" class="theme-btn">
-                                      CONTACT US
-                                    <i class="fa-solid fa-arrow-right"></i>
-                                </a>
-                            </div>
-                            <div class="header__hamburger d-xl-none my-auto">
-                                <div class="sidebar__toggle">
-                                    <i class="fas fa-bars"></i>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </header>
 
-       <!-- Breadcrumb-wrapper-section Start -->
-         <section class="breadcrumb-wrapper fix bg-cover" style="background-image: url(assets/img/inner-page/breadcrumb.jpg);">
-            <div class="container">
-                <div class="row">
-                    <div class="page-heading">
-                        <h2 class="wow fadeInUp" data-wow-delay=".3s">Contact Us</h2>
-                        <ul class="breadcrumb-list wow fadeInUp" data-wow-delay=".5s">
-                            <li>
-                                <a href="index.html">Home</a>
-                            </li>
-                            <li><i class="fa-solid fa-chevrons-right"></i></li>
-                            <li>Contact Us</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </section>
+</head>
+<body>
+<form id="contactForm">
+<label>Name</label>
+<input type="text" name="name" required>
+<label>Email</label>
+<input type="email" name="email" required>
+<label>Phone Number</label>
+<input type="text" name="phone">
+<label>Message</label>
+<textarea name="message" rows="5"></textarea>
+<button type="submit">Send Inquiry</button>
+</form>
+<!-- Success Popup -->
+<div id="successPopup" class="popup">
+<div class="popup-content">
+<h3>Success!</h3>
+<p>Inquiry Submitted Successfully.</p>
+<button onclick="goHome()">OK</button>
+</div>
+</div>
+
+
+
+
 
         
-        <!--Contact-Information Section Start -->
-        <section class="contact-information-section section-padding fix">
-            <div class="container">
-                <div class="section-title text-center">
-                    <h2 class="wow fadeInUp" data-wow-delay=".3s">
-                        Our Contact Information
-                    </h2>
-                </div>
-                <div class="row">
-                    <div class="col-xl-4 col-lg-6 col-md-6 wow fadeInUp" data-wow-delay=".3s">
-                        <div class="contact-information-item">
-                            <div class="icon">
-                                <i class="fa-regular fa-location-dot"></i>                                         
-                            </div>
-                            <div class="content">
-                                <h3>
-                                    Our Address
-                                </h3>
-                                <p>
-                                    2690 Hiltona Street Victoria Road, New York, Canada
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-xl-4 col-lg-6 col-md-6 wow fadeInUp" data-wow-delay=".5s">
-                        <div class="contact-information-item">
-                            <div class="icon">
-                                <i class="fa-regular fa-phone"></i>                                       
-                            </div>
-                            <div class="content">
-                                <h3>
-                                    Contact Number
-                                </h3>
-                                <p>
-                                    <a href="tel:+256214203215">+256 214 203 215</a> <br>
-                                        <a href="mailto:info@konta.com">info@konta.com</a>
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-xl-4 col-lg-6 col-md-6 wow fadeInUp" data-wow-delay=".7s">
-                        <div class="contact-information-item">
-                            <div class="icon">
-                                <i class="fa-regular fa-clock"></i>                                      
-                            </div>
-                            <div class="content">
-                                <h3>
-                                    Hours of Operation
-                                </h3>
-                                <p>
-                                    Monday - Saturday: 8:00 - 15:00
-                                    Sunday: Closed
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
 
-        <!--Contact-From-Section-2 Start -->
-        <section class="contact-from-section-2">
-            <div class="container">
-                <div class="contact-box-wrapper">
-                    <h2>Get In Touch</h2>
-                    <div class="row">
-                        <div class="col-xl-12">
-                            <form action="https://bulidx-html.vercel.app/contact.php" id="contact-form" method="POST">
-                                <div class="row g-4">
-                                    <div class="col-lg-6">
-                                        <div class="form-clt">
-                                            <input type="text" name="name" id="name" placeholder="Your Name">
-                                            <div class="icon">
-                                                <i class="fa-regular fa-user"></i>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-6">
-                                        <div class="form-clt">
-                                            <input type="text" name="email" id="email20" placeholder="Email address">
-                                            <div class="icon">
-                                                <i class="fa-regular fa-envelope"></i>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-12">
-                                        <div class="form-clt">
-                                            <input type="text" name="Website" id="email21" placeholder="Select website">
-                                            <div class="icon">
-                                                <i class="fa-regular fa-globe"></i>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-12">
-                                        <div class="form-clt">
-                                            <textarea name="message" id="message" placeholder="Type your message"></textarea>
-                                            <div class="icon">
-                                                <i class="fa-regular fa-pen"></i>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-12">
-                                        <button type="submit" class="theme-btn ">
-                                            post comment<i class="fa-solid fa-arrow-right-long"></i>
-                                        </button>
-                                    </div>
-                                </div>
-                            </form>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Map-section Start -->
-        <div class="map-section">
-            <div class="map-items">
-                <div class="googpemap">
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6678.7619084840835!2d144.9618311901502!3d-37.81450084255415!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad642b4758afc1d%3A0x3119cc820fdfc62e!2sEnvato!5e0!3m2!1sen!2sbd!4v1641984054261!5m2!1sen!2sbd" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-                </div>
-            </div>
-        </div>
-
+        
         <!-- Footer-Section Start -->
        <footer class="footer-section-2 fix bg-cover" style="background-image: url(assets/img/home-2/footer/footer-bg.jpg);">
             <div class="container">
@@ -651,7 +314,33 @@
                 </div>
             </div>
         </footer>
-    
+    <script>
+document.getElementById("contactForm").addEventListener("submit", function(e){
+e.preventDefault();
+const form = this;
+fetch(
+"https://script.google.com/macros/s/AKfycbzSg-BCiO_IKbD5u3_jxdZXGFpQa5H6XIwwMqnWJ863mEuV-ZZpH8bjF3n5pxVGS9AhgQ/exec",
+{
+method: "POST",
+body: new FormData(form),
+mode: "no-cors"
+}
+)
+.then(() => {
+document.getElementById("successPopup").style.display = "block";
+})
+.catch((error) => {
+alert("Submission Failed!");
+console.log(error);
+});
+});
+function goHome() {
+window.location.href = "https://purvanshparmar11-ops.github.io/B";
+/* OR use your website home page:
+window.location.href = "https://purvanshparmar11-ops.github.io/B";
+*/
+}
+</script>
         <!--<< All JS Plugins >>-->
         <script src="assets/js/jquery-3.7.1.min.js"></script>
         <!--<< Viewport Js >>-->
